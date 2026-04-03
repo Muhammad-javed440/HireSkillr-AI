@@ -50,6 +50,11 @@ const ProjectDetail: React.FC = () => {
         setProject(projectRes.data);
         setLikesCount(projectRes.data.likes_count || 0);
         setAvgRating(projectRes.data.rating || 0);
+        if (typeof fbq !== 'undefined') fbq('track', 'ViewContent', {
+          content_name: projectRes.data.title,
+          content_ids: [id],
+          content_type: 'product',
+        });
       }
       if (commentsRes.data) setComments(commentsRes.data);
 

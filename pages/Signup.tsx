@@ -29,6 +29,7 @@ const Signup: React.FC = () => {
     
     try {
       await signup(formData);
+      if (typeof fbq !== 'undefined') fbq('track', 'Lead');
       navigate('/');
     } catch (err: any) {
       setError(err.message || 'Something went wrong. Please try again.');

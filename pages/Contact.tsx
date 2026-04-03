@@ -85,6 +85,7 @@ const Contact: React.FC = () => {
       });
 
       setSubmitted(true);
+      if (typeof fbq !== 'undefined') fbq('track', 'Contact');
     } catch (err) {
       alert("Error sending message. Please try again.");
     } finally {
