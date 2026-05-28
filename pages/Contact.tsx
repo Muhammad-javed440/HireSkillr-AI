@@ -71,8 +71,8 @@ const Contact: React.FC = () => {
 
       if (error) throw error;
 
-      // 2. Send email to codewaveai44@gmail.com via FormSubmit
-      await fetch('https://formsubmit.co/ajax/codewaveai44@gmail.com', {
+      // 2. Send email to hello@mail.hireskillr.com via FormSubmit
+      await fetch('https://formsubmit.co/ajax/hello@mail.hireskillr.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
@@ -105,13 +105,13 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="space-y-8">
-            <a href={`https://mail.google.com/mail/?view=cm&to=codewaveai44@gmail.com&su=${encodeURIComponent(`Inquiry from ${user?.full_name || 'Visitor'} — HireSkillr AI`)}&body=${encodeURIComponent(`Hi HireSkillr AI Team,\n\nMy name is ${user?.full_name || 'a visitor'} and I'm reaching out because I'm interested in your AI solutions.\n\nI'd love to discuss how we can work together.\n\nLooking forward to hearing from you!\n\nBest regards,\n${user?.full_name || 'Visitor'}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6 bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-violet-500 transition-all shadow-xl shadow-black/5 cursor-pointer">
+            <a href={`https://mail.google.com/mail/?view=cm&to=hello@mail.hireskillr.com&su=${encodeURIComponent(`Inquiry from ${user?.full_name || 'Visitor'} — HireSkillr AI`)}&body=${encodeURIComponent(`Hi HireSkillr AI Team,\n\nMy name is ${user?.full_name || 'a visitor'} and I'm reaching out because I'm interested in your AI solutions.\n\nI'd love to discuss how we can work together.\n\nLooking forward to hearing from you!\n\nBest regards,\n${user?.full_name || 'Visitor'}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6 bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-violet-500 transition-all shadow-xl shadow-black/5 cursor-pointer">
               <div className="p-3 sm:p-4 bg-violet-600/10 text-violet-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform flex-shrink-0">
                 <Mail className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div className="min-w-0">
                 <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">Send an Email</p>
-                <p className="text-sm sm:text-lg font-black text-black dark:text-white truncate">codewaveai44@gmail.com</p>
+                <p className="text-sm sm:text-lg font-black text-black dark:text-white truncate">hello@mail.hireskillr.com</p>
               </div>
             </a>
 
@@ -141,13 +141,13 @@ const Contact: React.FC = () => {
             </a>
 
             {user ? (
-              <a href={`https://wa.me/923238300086?text=${encodeURIComponent(`Hi HireSkillr AI Team,\n\nMy name is ${user.full_name} and I'm reaching out because I'm interested in your AI solutions.\n\nI'd love to discuss how we can work together.\n\nLooking forward to hearing from you!\n\nBest regards,\n${user.full_name}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6 bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-green-500 transition-all shadow-xl shadow-black/5 cursor-pointer">
+              <a href={`https://wa.me/923024008502?text=${encodeURIComponent(`Hi HireSkillr AI Team,\n\nMy name is ${user.full_name} and I'm reaching out because I'm interested in your AI solutions.\n\nI'd love to discuss how we can work together.\n\nLooking forward to hearing from you!\n\nBest regards,\n${user.full_name}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6 bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-green-500 transition-all shadow-xl shadow-black/5 cursor-pointer">
                 <div className="p-3 sm:p-4 bg-green-600/10 text-green-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform flex-shrink-0">
                   <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <div>
                   <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">WhatsApp</p>
-                  <p className="text-sm sm:text-lg font-black text-black dark:text-white">+923238300086</p>
+                  <p className="text-sm sm:text-lg font-black text-black dark:text-white">+923024008502</p>
                 </div>
               </a>
             ) : (
@@ -157,7 +157,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">WhatsApp</p>
-                  <p className="text-sm sm:text-lg font-black text-black dark:text-white">+923238300086</p>
+                  <p className="text-sm sm:text-lg font-black text-black dark:text-white">+923024008502</p>
                   <p className="text-[10px] text-red-500 font-bold mt-1">Login required</p>
                 </div>
               </div>
