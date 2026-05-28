@@ -11,7 +11,7 @@ const renderTextWithLinks = (text: string) => {
   const parts = text.split(urlRegex);
   return parts.map((part, i) =>
     urlRegex.test(part) ? (
-      <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline break-all">
+      <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-violet-600 hover:underline break-all">
         {part}
       </a>
     ) : (
@@ -124,7 +124,7 @@ const ProjectDetail: React.FC = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center">
-        <Loader2 className="w-12 h-12 text-orange-600 animate-spin mb-4" />
+        <Loader2 className="w-12 h-12 text-violet-600 animate-spin mb-4" />
         <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">Loading Project...</p>
       </div>
     );
@@ -134,7 +134,7 @@ const ProjectDetail: React.FC = () => {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center gap-4">
         <p className="text-gray-500 font-bold uppercase tracking-widest">Project not found</p>
-        <Link to="/projects" className="text-orange-600 font-bold hover:underline">Back to Projects</Link>
+        <Link to="/projects" className="text-violet-600 font-bold hover:underline">Back to Projects</Link>
       </div>
     );
   }
@@ -151,7 +151,7 @@ const ProjectDetail: React.FC = () => {
       )}
 
       {/* Back */}
-      <Link to="/projects" className="inline-flex items-center gap-2 text-gray-500 hover:text-orange-600 font-bold text-sm uppercase tracking-widest mb-8 transition-colors">
+      <Link to="/projects" className="inline-flex items-center gap-2 text-gray-500 hover:text-violet-600 font-bold text-sm uppercase tracking-widest mb-8 transition-colors">
         <ArrowLeft className="w-4 h-4" /> Back to Projects
       </Link>
 
@@ -173,7 +173,7 @@ const ProjectDetail: React.FC = () => {
               key={i}
               onClick={() => setSelectedImage(i)}
               className={`flex-shrink-0 w-16 h-11 sm:w-20 sm:h-14 rounded-lg sm:rounded-xl overflow-hidden border-2 transition-all min-w-[44px] ${
-                i === selectedImage ? 'border-orange-600 scale-105' : 'border-gray-200 dark:border-gray-800 opacity-60 hover:opacity-100'
+                i === selectedImage ? 'border-violet-600 scale-105' : 'border-gray-200 dark:border-gray-800 opacity-60 hover:opacity-100'
               }`}
             >
               <img src={img} alt="" className="w-full h-full object-cover" />
@@ -198,7 +198,7 @@ const ProjectDetail: React.FC = () => {
             {project.title}
           </h1>
           {project.price != null && (
-            <span className="px-4 py-1.5 bg-orange-600/10 text-orange-600 font-bold rounded-xl text-sm">
+            <span className="px-4 py-1.5 bg-violet-600/10 text-violet-600 font-bold rounded-xl text-sm">
               ${project.price}
             </span>
           )}
@@ -224,7 +224,7 @@ const ProjectDetail: React.FC = () => {
                 href={project.pdf_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-all shadow-lg shadow-red-600/20"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl transition-all shadow-lg shadow-purple-600/30"
               >
                 <FileText className="w-4 h-4" />
                 View PDF
@@ -266,7 +266,7 @@ const ProjectDetail: React.FC = () => {
               <Star
                 className={`w-6 h-6 ${
                   star <= (hoverRating || userRating)
-                    ? 'text-orange-500 fill-current'
+                    ? 'text-violet-500 fill-current'
                     : 'text-gray-300 dark:text-gray-700'
                 }`}
               />
@@ -282,7 +282,7 @@ const ProjectDetail: React.FC = () => {
       {project.faqs && project.faqs.length > 0 && (
         <div className="mb-12">
           <h2 className="text-2xl font-black text-black dark:text-white uppercase tracking-tighter mb-6">
-            FAQs <span className="text-orange-600">({project.faqs.length})</span>
+            FAQs <span className="text-violet-600">({project.faqs.length})</span>
           </h2>
           <div className="space-y-3">
             {project.faqs.map((faq, idx) => (
@@ -296,7 +296,7 @@ const ProjectDetail: React.FC = () => {
                 >
                   <span className="font-bold text-black dark:text-white pr-4">{faq.question}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-orange-600 flex-shrink-0 transition-transform duration-300 ${
+                    className={`w-5 h-5 text-violet-600 flex-shrink-0 transition-transform duration-300 ${
                       openFaqIndex === idx ? 'rotate-180' : ''
                     }`}
                   />
@@ -315,7 +315,7 @@ const ProjectDetail: React.FC = () => {
       {/* Comments */}
       <div>
         <h2 className="text-2xl font-black text-black dark:text-white uppercase tracking-tighter mb-6">
-          Comments <span className="text-orange-600">({comments.length})</span>
+          Comments <span className="text-violet-600">({comments.length})</span>
         </h2>
 
         {user && (
@@ -325,12 +325,12 @@ const ProjectDetail: React.FC = () => {
               value={commentText}
               onChange={(e) => setCommentText(e.target.value)}
               placeholder="Add a comment..."
-              className="flex-grow min-w-0 px-3 sm:px-5 py-3 bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl focus:outline-none focus:border-orange-600 transition-colors text-sm sm:text-base"
+              className="flex-grow min-w-0 px-3 sm:px-5 py-3 bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl focus:outline-none focus:border-violet-600 transition-colors text-sm sm:text-base"
             />
             <button
               type="submit"
               disabled={submitting || !commentText.trim()}
-              className="px-4 sm:px-5 py-3 bg-orange-600 text-white font-bold rounded-xl hover:bg-orange-700 transition-colors disabled:opacity-50 flex-shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center"
+              className="px-4 sm:px-5 py-3 bg-violet-600 text-white font-bold rounded-xl hover:bg-violet-700 transition-colors disabled:opacity-50 flex-shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               {submitting ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5" />}
             </button>

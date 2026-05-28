@@ -1,0 +1,54 @@
+HireSkillr AI - Frequently Asked Questions
+==========================================
+
+1. What is HireSkillr AI?
+   HireSkillr AI is a premium technology brand platform that showcases AI-driven projects, 
+   voice automation solutions, and web innovation. It is built as a modern React application with 
+   role-based authentication and an admin dashboard.
+
+2. What technologies power the platform?
+   The platform uses React 19 with TypeScript, Vite 6 as the build tool, Tailwind CSS 3.4 for styling 
+   (with dark/light mode), Supabase for authentication and PostgreSQL database, React Router v7 (HashRouter)
+    for navigation, Recharts for analytics, and Lucide React for icons.
+
+3. What user roles exist in the application?
+   There are only two roles: Admin and User, defined in the UserRole enum in types.ts. 
+   Admin privileges are restricted to three hardcoded emails: meherjaved440@gmail.com,
+    javedstore1013@gmail.com, and codewaveai44@gmail.com.
+
+4. How is authentication handled?
+   Authentication is managed through Supabase Auth and exposed to the app via AuthContext.
+    It supports signup, login, password recovery via reset emails, and protected routes via the 
+    ProtectedRoute component in App.tsx. Role checks use the hardcoded admin email list.
+
+5. How does the theme (dark/light mode) work?
+   Theme state is managed globally through ThemeContext. Toggling the theme adds or removes the 
+   `dark` class on the root HTML element, and Tailwind's `dark:` class variants apply the appropriate
+    styles throughout the UI.
+
+6. What features are available to admins?
+   Admins access a protected `/admin` area that includes a Dashboard with analytics,
+    a Projects page for CRUD operations on projects, a Team page for managing team members
+     (picture, name, bio), and a Settings page for profile configuration.
+
+7. What interactive features do public project pages include?
+   The ProjectDetail page supports FAQs (stored as a JSONB column on the projects table), user 
+   comments, ratings, and likes. These are backed by the project_likes, project_ratings,
+    and project_comments tables with Row Level Security enabled.
+
+8. Is the site responsive across devices?
+   Yes. The platform is fully mobile-first responsive across 17 target devices ranging from 344px to 2560px.
+    Custom Tailwind breakpoints include xs (344), 2xs (360), phone (375), phone-mid (390), phone-lg (412),
+     sm (640), md (768), md-lg (820), tablet (912), lg (1024), xl (1280), and 2xl (1536). Safe area insets
+      and 44px minimum touch targets are supported.
+
+9. What database tables drive the application?
+   Core Supabase tables include profiles, projects, project_media, project_likes, project_ratings,
+    project_comments, site_visits, contact_messages, team_members, and skills. All tables enforce 
+    Row Level Security, and admin logic is enforced at the database level rather than only on the frontend.
+
+10. How do I run the project locally?
+    Create a `.env.local` file containing VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY with your 
+    Supabase credentials. Then run `npm run dev` to start the development server on port 3000,
+     `npm run build` to create a production build in the `dist/` folder, or `npm run preview` 
+     to preview the production build.

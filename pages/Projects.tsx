@@ -11,7 +11,7 @@ const renderTextWithLinks = (text: string) => {
   const parts = text.split(urlRegex);
   return parts.map((part, i) =>
     urlRegex.test(part) ? (
-      <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline break-all">
+      <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-violet-600 hover:underline break-all">
         {part}
       </a>
     ) : (
@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
           </p>
         </div>
         <div className="flex items-center">
-          <button className="flex items-center space-x-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-900 rounded-xl text-sm font-bold text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-500 transition-all min-h-[44px]">
+          <button className="flex items-center space-x-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-900 rounded-xl text-sm font-bold text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-500 transition-all min-h-[44px]">
             <Filter className="w-4 h-4" /> <span>Sort</span>
           </button>
         </div>
@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
 
       {loading ? (
         <div className="flex flex-col items-center justify-center py-20">
-          <Loader2 className="w-12 h-12 text-orange-600 animate-spin mb-4" />
+          <Loader2 className="w-12 h-12 text-violet-600 animate-spin mb-4" />
           <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">Loading Projects...</p>
         </div>
       ) : projects.length === 0 ? (
@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-10">
           {projects.map((project) => (
-            <div key={project.id} className="group bg-white dark:bg-black border border-gray-200 dark:border-gray-900 rounded-2xl sm:rounded-[2rem] overflow-hidden hover:border-orange-500 transition-all duration-500 flex flex-col">
+            <div key={project.id} className="group bg-white dark:bg-black border border-gray-200 dark:border-gray-900 rounded-2xl sm:rounded-[2rem] overflow-hidden hover:border-violet-500 transition-all duration-500 flex flex-col">
               <div className="p-2 sm:p-3">
                 <DualImageFrame 
                   image1={project.media?.[0] || 'https://via.placeholder.com/800x450'} 
@@ -101,7 +101,7 @@ const Projects: React.FC = () => {
               <div className="p-4 sm:p-6 md:p-8 flex-grow space-y-3 sm:space-y-4">
                 <div className="flex items-start justify-between gap-2">
                   <h3 className="text-lg sm:text-xl md:text-2xl font-black text-black dark:text-white uppercase tracking-tighter line-clamp-2">{project.title}</h3>
-                  <div className="flex items-center text-orange-600 font-bold bg-orange-600/10 px-2 py-1 rounded-lg text-sm">
+                  <div className="flex items-center text-violet-600 font-bold bg-violet-600/10 px-2 py-1 rounded-lg text-sm">
                     <Star className="w-4 h-4 mr-1 fill-current" /> {project.rating || 0}
                   </div>
                 </div>
@@ -116,13 +116,13 @@ const Projects: React.FC = () => {
                       <Heart className="w-5 h-5" />
                       <span className="text-sm font-bold">{project.likes_count || 0}</span>
                     </button>
-                    <button className="flex items-center space-x-1.5 text-gray-400 hover:text-orange-500 transition-colors">
+                    <button className="flex items-center space-x-1.5 text-gray-400 hover:text-violet-500 transition-colors">
                       <MessageSquare className="w-5 h-5" />
                       <span className="text-sm font-bold">{commentCounts[project.id] || 0}</span>
                     </button>
                   </div>
                   
-                  <Link to={`/projects/${project.id}`} className="p-2 bg-gray-100 dark:bg-gray-900 text-orange-600 rounded-xl hover:bg-orange-600 hover:text-white transition-all">
+                  <Link to={`/projects/${project.id}`} className="p-2 bg-gray-100 dark:bg-gray-900 text-violet-600 rounded-xl hover:bg-violet-600 hover:text-white transition-all">
                     <ExternalLink className="w-5 h-5" />
                   </Link>
                 </div>

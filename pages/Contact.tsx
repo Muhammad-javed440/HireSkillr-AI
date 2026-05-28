@@ -80,7 +80,7 @@ const Contact: React.FC = () => {
           email: formData.email,
           message: formData.message,
           location: location,
-          _subject: `New Contact from ${formData.name} — CodeWaveAI`,
+          _subject: `New Contact from ${formData.name} — HireSkillr AI`,
         })
       });
 
@@ -98,15 +98,15 @@ const Contact: React.FC = () => {
       <div className="grid lg:grid-cols-2 gap-10 sm:gap-14 lg:gap-20 items-start">
         <div className="space-y-8 sm:space-y-12">
           <div className="space-y-3 sm:space-y-4">
-            <h1 className="text-3xl 2xs:text-4xl sm:text-5xl md:text-7xl font-black text-black dark:text-white tracking-tighter uppercase leading-none">GET IN <br /><span className="text-orange-600">TOUCH</span>.</h1>
+            <h1 className="text-3xl 2xs:text-4xl sm:text-5xl md:text-7xl font-black text-black dark:text-white tracking-tighter uppercase leading-none">GET IN <br /><span className="text-violet-600">TOUCH</span>.</h1>
             <p className="text-base sm:text-xl text-gray-500 dark:text-gray-400 leading-relaxed max-w-md font-medium">
               Do you have a smart idea? We want to hear from you.
             </p>
           </div>
 
           <div className="space-y-8">
-            <a href={`https://mail.google.com/mail/?view=cm&to=codewaveai44@gmail.com&su=${encodeURIComponent(`Inquiry from ${user?.full_name || 'Visitor'} — CodeWaveAI`)}&body=${encodeURIComponent(`Hi CodeWaveAI Team,\n\nMy name is ${user?.full_name || 'a visitor'} and I'm reaching out because I'm interested in your AI solutions.\n\nI'd love to discuss how we can work together.\n\nLooking forward to hearing from you!\n\nBest regards,\n${user?.full_name || 'Visitor'}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6 bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-orange-500 transition-all shadow-xl shadow-black/5 cursor-pointer">
-              <div className="p-3 sm:p-4 bg-orange-600/10 text-orange-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform flex-shrink-0">
+            <a href={`https://mail.google.com/mail/?view=cm&to=codewaveai44@gmail.com&su=${encodeURIComponent(`Inquiry from ${user?.full_name || 'Visitor'} — HireSkillr AI`)}&body=${encodeURIComponent(`Hi HireSkillr AI Team,\n\nMy name is ${user?.full_name || 'a visitor'} and I'm reaching out because I'm interested in your AI solutions.\n\nI'd love to discuss how we can work together.\n\nLooking forward to hearing from you!\n\nBest regards,\n${user?.full_name || 'Visitor'}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6 bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-violet-500 transition-all shadow-xl shadow-black/5 cursor-pointer">
+              <div className="p-3 sm:p-4 bg-violet-600/10 text-violet-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform flex-shrink-0">
                 <Mail className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <div className="min-w-0">
@@ -115,7 +115,7 @@ const Contact: React.FC = () => {
               </div>
             </a>
 
-            <a href={officeMapsUrl} target="_blank" rel="noopener noreferrer" className="block bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-red-500 transition-all shadow-xl shadow-black/5 overflow-hidden cursor-pointer">
+            <a href={officeMapsUrl} target="_blank" rel="noopener noreferrer" className="block bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-purple-500 transition-all shadow-xl shadow-black/5 overflow-hidden cursor-pointer">
               <div className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6">
                 <div className="p-3 sm:p-4 bg-red-600/10 text-red-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform flex-shrink-0">
                   <MapPin className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -141,7 +141,7 @@ const Contact: React.FC = () => {
             </a>
 
             {user ? (
-              <a href={`https://wa.me/923238300086?text=${encodeURIComponent(`Hi CodeWaveAI Team,\n\nMy name is ${user.full_name} and I'm reaching out because I'm interested in your AI solutions.\n\nI'd love to discuss how we can work together.\n\nLooking forward to hearing from you!\n\nBest regards,\n${user.full_name}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6 bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-green-500 transition-all shadow-xl shadow-black/5 cursor-pointer">
+              <a href={`https://wa.me/923238300086?text=${encodeURIComponent(`Hi HireSkillr AI Team,\n\nMy name is ${user.full_name} and I'm reaching out because I'm interested in your AI solutions.\n\nI'd love to discuss how we can work together.\n\nLooking forward to hearing from you!\n\nBest regards,\n${user.full_name}`)}`} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-4 sm:space-x-6 p-4 sm:p-6 bg-white dark:bg-black border border-gray-100 dark:border-gray-900 rounded-2xl sm:rounded-3xl group hover:border-green-500 transition-all shadow-xl shadow-black/5 cursor-pointer">
                 <div className="p-3 sm:p-4 bg-green-600/10 text-green-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform flex-shrink-0">
                   <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
@@ -166,7 +166,7 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="relative">
-          <div className="absolute -inset-10 bg-orange-600/10 blur-[100px] rounded-full"></div>
+          <div className="absolute -inset-10 bg-violet-600/10 blur-[100px] rounded-full"></div>
           
           <div className="bg-white dark:bg-black border-2 border-gray-100 dark:border-gray-900 p-5 sm:p-8 md:p-12 rounded-2xl sm:rounded-[3rem] shadow-2xl relative">
             {submitted ? (
@@ -188,41 +188,41 @@ const Contact: React.FC = () => {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-1">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Your Name</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Your Name</label>
                   <input 
                     required 
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 text-black dark:text-white focus:ring-2 focus:ring-orange-600 outline-none transition-all font-bold" 
+                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 text-black dark:text-white focus:ring-2 focus:ring-violet-600 outline-none transition-all font-bold" 
                     placeholder="Tell us your name" 
                   />
                 </div>
                 <div className="space-y-1">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Email Address</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Email Address</label>
                   <input 
                     required 
                     type="email" 
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 text-black dark:text-white focus:ring-2 focus:ring-orange-600 outline-none transition-all font-bold" 
+                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 text-black dark:text-white focus:ring-2 focus:ring-violet-600 outline-none transition-all font-bold" 
                     placeholder="Where can we email you?" 
                   />
                 </div>
                 
                 <div className="space-y-1">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Your Location</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Your Location</label>
                   <div className="relative">
                     <input 
                       value={location}
                       onChange={(e) => setLocation(e.target.value)}
-                      className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 pr-16 text-black dark:text-white focus:ring-2 focus:ring-orange-600 outline-none transition-all font-bold" 
+                      className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 pr-16 text-black dark:text-white focus:ring-2 focus:ring-violet-600 outline-none transition-all font-bold" 
                       placeholder="Coordinates or Address" 
                     />
                     <button
                       type="button"
                       onClick={handleGetLocation}
                       disabled={isLocating}
-                      className="absolute right-2 top-1/2 -translate-y-1/2 p-3 bg-orange-600 text-white rounded-xl hover:bg-red-600 transition-all disabled:opacity-50"
+                      className="absolute right-2 top-1/2 -translate-y-1/2 p-3 bg-violet-600 text-white rounded-xl hover:bg-purple-700 transition-all disabled:opacity-50"
                       title="Auto-detect location"
                     >
                       {isLocating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Navigation className="w-4 h-4" />}
@@ -231,20 +231,20 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">How can we help?</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">How can we help?</label>
                   <textarea 
                     required 
                     rows={4} 
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 text-black dark:text-white focus:ring-2 focus:ring-orange-600 outline-none transition-all font-medium" 
+                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 text-black dark:text-white focus:ring-2 focus:ring-violet-600 outline-none transition-all font-medium" 
                     placeholder="Tell us what you need..."
                   ></textarea>
                 </div>
                 <button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-5 bg-orange-600 hover:bg-red-600 text-white font-black rounded-2xl transition-all shadow-xl shadow-orange-600/30 flex items-center justify-center space-x-3 uppercase tracking-[0.2em]"
+                  className="w-full py-5 bg-violet-600 hover:bg-purple-700 text-white font-black rounded-2xl transition-all shadow-xl shadow-violet-600/30 flex items-center justify-center space-x-3 uppercase tracking-[0.2em]"
                 >
                   {isSubmitting ? <Loader2 className="w-5 h-5 animate-spin" /> : <><Send className="w-5 h-5" /> <span>SEND NOW</span></>}
                 </button>

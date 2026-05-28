@@ -44,7 +44,7 @@ const Signup: React.FC = () => {
         <div className="absolute top-0 left-0 p-12 bg-purple-600/5 blur-3xl rounded-full"></div>
         
         <div className="text-center space-y-2 relative">
-          <h2 className="text-3xl font-black text-white">Join Code Wave</h2>
+          <h2 className="text-3xl font-black text-white">Join HireSkillr AI</h2>
           <p className="text-gray-400">Be part of the future with smart AI</p>
         </div>
 

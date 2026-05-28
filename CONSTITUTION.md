@@ -1,6 +1,6 @@
-# 📜 Constitution — Code Wave AI Technology Platform
+# 📜 Constitution — HireSkillr AI Technology Platform
 
-**Project Name:** Code Wave AI Platform
+**Project Name:** HireSkillr AI Platform
 **Tech Stack:** Vite + React + TypeScript + Supabase
 **Domain Focus:** AI Voice Chatbots, Automation, Web Technologies
 
@@ -8,7 +8,7 @@
 
 ## 1. Vision & Purpose
 
-The purpose of this platform is to establish **Code Wave AI** as a premium, modern technology brand showcasing AI-driven projects, voice automation solutions, and web innovation. The website will serve three core goals:
+The purpose of this platform is to establish **HireSkillr AI** as a premium, modern technology brand showcasing AI-driven projects, voice automation solutions, and web innovation. The website will serve three core goals:
 
 1. **Authentication & User Management** (secure, role-based)
 2. **Project Showcase & Interaction** (media-rich, engaging)
@@ -150,7 +150,7 @@ This rule is enforced at:
 
 **Content:**
 
-* About Code Wave AI
+* About HireSkillr AI
 * Founder background
 * Skills & technologies
 * Animated sections
@@ -308,4 +308,4 @@ Planned expansions:
 
 ---
 
-**This constitution defines the foundation of the Code Wave AI platform and must be followed throughout development.**
+**This constitution defines the foundation of the HireSkillr AI platform and must be followed throughout development.**

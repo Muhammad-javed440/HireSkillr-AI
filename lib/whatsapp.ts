@@ -5,12 +5,12 @@ export const notifyAdminWhatsApp = async (userData: { name: string; email: strin
   if (!adminPhone || !apikey) return;
 
   const message = encodeURIComponent(
-    `Dear Admin,\n\nA new user has successfully registered on Code Wave AI.\n\n` +
+    `Dear Admin,\n\nA new user has successfully registered on HireSkillr AI.\n\n` +
     `Name: ${userData.name}\n` +
     `Email: ${userData.email}\n` +
     `Phone: ${userData.phone}\n` +
     `Registered At: ${new Date().toLocaleString()}\n\n` +
-    `Please welcome them to the platform.\n\n— Code Wave AI System`
+    `Please welcome them to the platform.\n\n— HireSkillr AI System`
   );
 
   fetch(`https://api.callmebot.com/whatsapp.php?phone=${adminPhone}&text=${message}&apikey=${apikey}`, {
@@ -24,7 +24,7 @@ export const greetUserWhatsApp = async (userPhone: string) => {
   if (!userPhone || !apikey) return;
 
   const greeting = encodeURIComponent(
-    `Hello! Welcome to Code Wave AI!\n\n` +
+    `Hello! Welcome to HireSkillr AI!\n\n` +
     `We build intelligent AI-powered tools, voice automation systems, and modern web applications.\n\n` +
     `Visit us: code-vawe-786.vercel.app\n` +
     `Email: codewaveai44@gmail.com\n\n` +

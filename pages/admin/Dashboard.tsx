@@ -75,7 +75,7 @@ const AdminDashboard: React.FC = () => {
           <h1 className="text-2xl sm:text-3xl font-black text-black dark:text-white uppercase tracking-tighter">Admin Panel</h1>
           <p className="text-gray-500 font-medium text-sm sm:text-base">Real-time platform performance</p>
         </div>
-        <Link to="/admin/projects" className="px-5 sm:px-6 py-2.5 sm:py-3 bg-orange-600 hover:bg-red-600 text-white text-sm font-black rounded-xl flex items-center justify-center transition-all shadow-lg shadow-orange-600/20 min-h-[44px] w-full sm:w-auto">
+        <Link to="/admin/projects" className="px-5 sm:px-6 py-2.5 sm:py-3 bg-violet-600 hover:bg-purple-700 text-white text-sm font-black rounded-xl flex items-center justify-center transition-all shadow-lg shadow-violet-600/20 min-h-[44px] w-full sm:w-auto">
           <Plus className="w-4 h-4 mr-2" /> NEW PROJECT
         </Link>
       </div>
@@ -83,7 +83,7 @@ const AdminDashboard: React.FC = () => {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
         <StatCard title="Total Visits" value={stats.visits.toLocaleString()} icon={Eye} trend="+12%" color="bg-blue-500" loading={loading} />
         <StatCard title="Registered Users" value={stats.users.toLocaleString()} icon={Users} trend="+5%" color="bg-purple-500" loading={loading} />
-        <StatCard title="Live Projects" value={stats.projects.toLocaleString()} icon={Layout} trend="+2%" color="bg-orange-500" loading={loading} />
+        <StatCard title="Live Projects" value={stats.projects.toLocaleString()} icon={Layout} trend="+2%" color="bg-violet-500" loading={loading} />
         <StatCard title="New Messages" value={stats.messages.toLocaleString()} icon={MessageSquare} trend="0%" color="bg-red-500" loading={loading} />
       </div>
 
@@ -99,8 +99,8 @@ const AdminDashboard: React.FC = () => {
                 <AreaChart data={chartData}>
                   <defs>
                     <linearGradient id="colorVisits" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#f97316" stopOpacity={0.3}/>
-                      <stop offset="95%" stopColor="#f97316" stopOpacity={0}/>
+                      <stop offset="5%" stopColor="#8b5cf6" stopOpacity={0.3}/>
+                      <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0}/>
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" vertical={false} />
@@ -108,9 +108,9 @@ const AdminDashboard: React.FC = () => {
                   <YAxis stroke="#6b7280" fontSize={10} fontWeight="bold" tickLine={false} axisLine={false} />
                   <Tooltip
                     contentStyle={{ backgroundColor: '#000', border: 'none', borderRadius: '16px', color: '#fff' }}
-                    itemStyle={{ color: '#f97316', fontWeight: 'bold' }}
+                    itemStyle={{ color: '#8b5cf6', fontWeight: 'bold' }}
                   />
-                  <Area type="monotone" dataKey="visits" stroke="#f97316" fillOpacity={1} fill="url(#colorVisits)" strokeWidth={4} />
+                  <Area type="monotone" dataKey="visits" stroke="#8b5cf6" fillOpacity={1} fill="url(#colorVisits)" strokeWidth={4} />
                 </AreaChart>
               </ResponsiveContainer>
             )}
@@ -120,8 +120,8 @@ const AdminDashboard: React.FC = () => {
         <div className="bg-white dark:bg-black border border-gray-200 dark:border-gray-900 p-4 sm:p-8 rounded-2xl sm:rounded-[2rem] shadow-xl space-y-4 sm:space-y-6">
           <h3 className="text-lg sm:text-xl font-black text-black dark:text-white uppercase tracking-tighter">Shortcuts</h3>
           <div className="space-y-3 sm:space-y-4">
-            <Link to="/admin/projects" className="flex items-center p-4 bg-gray-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-900 rounded-2xl hover:border-orange-500 transition-all group">
-              <div className="p-3 bg-orange-600/10 text-orange-600 rounded-xl mr-4 group-hover:scale-110 transition-transform">
+            <Link to="/admin/projects" className="flex items-center p-4 bg-gray-50 dark:bg-gray-950 border border-gray-100 dark:border-gray-900 rounded-2xl hover:border-violet-500 transition-all group">
+              <div className="p-3 bg-violet-600/10 text-violet-600 rounded-xl mr-4 group-hover:scale-110 transition-transform">
                 <Layout className="w-5 h-5" />
               </div>
               <div className="text-left">

@@ -14,8 +14,9 @@ export const SOCIAL_LINKS = {
 export const WHATSAPP_NUMBER = '923238300086';
 
 export const COLORS = {
-  primary: '#f97316', // Orange 500
-  secondary: '#ef4444', // Red 500
+  primary: '#8b5cf6', // Violet 500
+  secondary: '#a855f7', // Purple 500
+  accent: '#fbbf24', // Amber 400 (logo checkmark)
   success: '#22c55e', // Green 500
   background: '#000000',
   card: '#0a0a0a',

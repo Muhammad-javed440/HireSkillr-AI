@@ -1,5 +1,5 @@
 ================================================================================
-                    FACEBOOK AD SCRIPTS — CODE WAVE AI
+                    FACEBOOK AD SCRIPTS — HIRESKILLR AI
                  Website: code-vawe-786.vercel.app
                  Email: codewaveai44@gmail.com
                  WhatsApp: +92 323 8300086
@@ -16,7 +16,7 @@ Smart AI Tools That Work For You
 PRIMARY TEXT:
 Still doing everything manually? Let AI handle it.
 
-Code Wave AI builds intelligent tools that save you time, grow your business, and make your life easier.
+HireSkillr AI builds intelligent tools that save you time, grow your business, and make your life easier.
 
 Here's what we offer:
 
@@ -44,7 +44,7 @@ See What We've Built
 PRIMARY TEXT:
 We don't just talk about AI — we build it.
 
-Explore our live projects on Code Wave AI:
+Explore our live projects on HireSkillr AI:
 
 -> Browse our full project gallery with ratings, likes, and real user reviews
 -> Watch project demos and see how they work
@@ -80,12 +80,12 @@ AD #3 — LEAD GENERATION (Contact/Sign Up Ad)
 ================================================================================
 
 HEADLINE:
-Join Code Wave AI — It's Free
+Join HireSkillr AI — It's Free
 
 PRIMARY TEXT:
 Ready to experience the future of technology?
 
-Sign up on Code Wave AI and get access to:
+Sign up on HireSkillr AI and get access to:
 
 -> Full project showcase with detailed descriptions
 -> Like, rate, and comment on any project
@@ -95,7 +95,7 @@ Sign up on Code Wave AI and get access to:
 
 Signing up takes less than 30 seconds. All you need is your name, email, and phone number.
 
-Join hundreds of users who are already part of the Code Wave AI community.
+Join hundreds of users who are already part of the HireSkillr AI community.
 
 CALL TO ACTION: Sign Up
 LINK: code-vawe-786.vercel.app/#/signup
@@ -109,7 +109,7 @@ HEADLINE:
 Real Users. Real Results.
 
 PRIMARY TEXT:
-Code Wave AI is growing — and the numbers speak for themselves.
+HireSkillr AI is growing — and the numbers speak for themselves.
 
 -> Active users from around the world
 -> Multiple AI-powered projects live and running
@@ -121,7 +121,7 @@ Our platform is built with React, TypeScript, and Supabase — the same technolo
 
 We believe smart technology should be simple, fast, and accessible to everyone.
 
-See why people trust Code Wave AI.
+See why people trust HireSkillr AI.
 
 CALL TO ACTION: Learn More
 LINK: code-vawe-786.vercel.app/#/about
@@ -139,7 +139,7 @@ Have a project in mind? Need an AI solution for your business?
 
 Talk to us directly on WhatsApp — no forms, no waiting.
 
-Code Wave AI specializes in:
+HireSkillr AI specializes in:
 -> Voice AI & Chatbot Development
 -> Business Process Automation
 -> Custom Web Application Development
@@ -151,7 +151,7 @@ Send us a message right now — we respond fast.
 
 CALL TO ACTION: Send WhatsApp Message
 WHATSAPP NUMBER: +923238300086
-PRE-FILLED MESSAGE: Hi Code Wave AI! I'm interested in your AI solutions. Can we discuss a project?
+PRE-FILLED MESSAGE: Hi HireSkillr AI! I'm interested in your AI solutions. Can we discuss a project?
 
 
 ================================================================================
@@ -162,7 +162,7 @@ HEADLINE:
 You Visited. Now Join Us.
 
 PRIMARY TEXT:
-You checked out Code Wave AI — now take the next step.
+You checked out HireSkillr AI — now take the next step.
 
 When you sign up, you get:
 
@@ -189,7 +189,7 @@ Text on screen: "Still doing everything manually?"
 Visual: Person overwhelmed at desk
 
 [SECOND 4-6]
-Text on screen: "Meet Code Wave AI"
+Text on screen: "Meet HireSkillr AI"
 Visual: Website homepage loading with animations
 
 [SECOND 7-9]
@@ -205,7 +205,7 @@ Text on screen: "Visit code-vawe-786.vercel.app"
 Visual: Logo + website URL + "Sign Up Free" button
 
 MUSIC: Upbeat, modern, tech-inspired
-VOICEOVER (optional): "Code Wave AI — Smart tools that work for you."
+VOICEOVER (optional): "HireSkillr AI — Smart tools that work for you."
 
 
 ================================================================================
@@ -286,7 +286,7 @@ VIDEO #1 — MAIN PROMO VIDEO (60 seconds)
          "The Future Is Here"
 ================================================================================
 
-PURPOSE: Brand introduction. Show what Code Wave AI is, what it does, and
+PURPOSE: Brand introduction. Show what HireSkillr AI is, what it does, and
          why people should care. This is your flagship video.
 
 TONE: Confident, modern, inspiring
@@ -317,11 +317,11 @@ MUSIC: Cinematic tech beat — builds energy gradually
 [0:06 - 0:10] THE SOLUTION — Brand Reveal
 --------------------------------------------------------------------------------
   VISUAL:   Screen goes black for half a second, then:
-            Code Wave AI logo animates in (glow effect).
+            HireSkillr AI logo animates in (glow effect).
             Website homepage loads with the floating orb animations.
   AUDIO:    Bass drop + upbeat tech music starts
-  TEXT:      "Meet Code Wave AI"
-  VOICEOVER: "Meet Code Wave AI — where smart technology works for you."
+  TEXT:      "Meet HireSkillr AI"
+  VOICEOVER: "Meet HireSkillr AI — where smart technology works for you."
 
 [0:10 - 0:20] FEATURE SHOWCASE — What We Do (3 features, ~3 sec each)
 --------------------------------------------------------------------------------
@@ -407,10 +407,10 @@ MUSIC: Cinematic tech beat — builds energy gradually
             "code-vawe-786.vercel.app"
             Below it: "Sign Up Free Today"
             WhatsApp icon + "+92 323 8300086"
-            Code Wave AI logo at the bottom.
+            HireSkillr AI logo at the bottom.
   AUDIO:    Music fades to a clean ending. Final bass note.
-  TEXT:      "Code Wave AI — We Make Smart Tech"
-  VOICEOVER: "Visit Code Wave AI today.
+  TEXT:      "HireSkillr AI — We Make Smart Tech"
+  VOICEOVER: "Visit HireSkillr AI today.
               Sign up for free. Let's build the future together."
 
   [FINAL FRAME — hold for 3 seconds]
@@ -438,7 +438,7 @@ MUSIC: Trending reel audio or fast tech beat
 [0:02 - 0:05] PROBLEM + SOLUTION
   VISUAL:   Split screen —
             LEFT: "Manual Work" with a red X
-            RIGHT: "Code Wave AI" with a green checkmark
+            RIGHT: "HireSkillr AI" with a green checkmark
             Transition: left side shatters, right side expands full screen
   TEXT:      "There's a smarter way."
 
@@ -478,9 +478,9 @@ MUSIC: Soft ambient tech background (low volume, don't overpower voiceover)
 --------------------------------------------------------------------------------
 
 [0:00 - 0:05] INTRO
-  VISUAL:   Code Wave AI logo on dark background.
-            Text fades in: "Platform Tour — Code Wave AI"
-  VOICEOVER: "Welcome to Code Wave AI. Let me show you
+  VISUAL:   HireSkillr AI logo on dark background.
+            Text fades in: "Platform Tour — HireSkillr AI"
+  VOICEOVER: "Welcome to HireSkillr AI. Let me show you
               everything our platform can do."
 
 [0:05 - 0:20] HOMEPAGE TOUR
@@ -565,9 +565,9 @@ MUSIC: Soft ambient tech background (low volume, don't overpower voiceover)
             showing it's fully responsive.
             Fade to: URL + logo + WhatsApp number centered on dark background.
   TEXT:      "code-vawe-786.vercel.app"
-            "Sign Up Free — Join Code Wave AI Today"
+            "Sign Up Free — Join HireSkillr AI Today"
             "+92 323 8300086"
-  VOICEOVER: "Code Wave AI — fully responsive, completely free to join.
+  VOICEOVER: "HireSkillr AI — fully responsive, completely free to join.
               Visit us today and be part of the future."
 
 
@@ -585,7 +585,7 @@ MUSIC: Clean, minimal, corporate
 --------------------------------------------------------------------------------
 
 [0:00 - 0:03] HOOK
-  VISUAL:   Text on screen: "Why do people trust Code Wave AI?"
+  VISUAL:   Text on screen: "Why do people trust HireSkillr AI?"
   AUDIO:    Soft piano note
 
 [0:03 - 0:08] STAT 1
@@ -616,12 +616,12 @@ MUSIC: Clean, minimal, corporate
 
 [0:23 - 0:30] CTA
   VISUAL:   Logo + URL + "Sign Up Free"
-  VOICEOVER: "Code Wave AI. See it for yourself."
+  VOICEOVER: "HireSkillr AI. See it for yourself."
 
 
 ================================================================================
 VIDEO #5 — FOUNDER / PERSONAL BRAND VIDEO (45 seconds)
-         "Meet the Person Behind Code Wave AI"
+         "Meet the Person Behind HireSkillr AI"
 ================================================================================
 
 PURPOSE: Personal connection. People trust people, not logos.
@@ -634,8 +634,8 @@ MUSIC: Light acoustic or no music (voice focus)
 
 [0:00 - 0:05] INTRO — Face to camera
   VISUAL:   Founder sitting/standing in front of computer or workspace.
-            Name tag appears: "[Your Name] — Founder, Code Wave AI"
-  SCRIPT:   "Assalam o Alaikum! I'm [Your Name], and I built Code Wave AI."
+            Name tag appears: "[Your Name] — Founder, HireSkillr AI"
+  SCRIPT:   "Assalam o Alaikum! I'm [Your Name], and I built HireSkillr AI."
 
 [0:05 - 0:15] THE WHY — Why you started
   VISUAL:   Founder talking. B-roll cuts of website loading in background.
@@ -916,7 +916,7 @@ STEP 8: QUICK TIPS FOR BETTER RESULTS
 
   5. ONE VIDEO = ONE MESSAGE
      -> Don't try to say everything in one video
-     -> Video #1 = "What is Code Wave AI?"
+     -> Video #1 = "What is HireSkillr AI?"
      -> Video #3 = "Here's how the platform works"
      -> Video #5 = "Meet the founder"
 

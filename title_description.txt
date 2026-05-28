@@ -1,15 +1,15 @@
 ========================================================
-CODE WAVE AI — Project Title & Description
+HIRESKILLR AI — Project Title & Description
 ========================================================
 
 TITLE:
-Code Wave AI — Premium AI Technology & Web Innovation Platform
+HireSkillr AI — Premium AI Technology & Web Innovation Platform
 
 SHORT DESCRIPTION:
 A modern, full-stack web platform showcasing AI-driven projects, voice automation solutions, and web innovation with secure role-based authentication, media-rich project showcases, and a powerful admin panel.
 
 DETAILED DESCRIPTION:
-Code Wave AI is a premium technology brand platform built with React 19, TypeScript, Vite, and Supabase. The platform serves as a professional digital presence for showcasing AI and automation projects with an engaging, interactive user experience.
+HireSkillr AI is a premium technology brand platform built with React 19, TypeScript, Vite, and Supabase. The platform serves as a professional digital presence for showcasing AI and automation projects with an engaging, interactive user experience.
 
 KEY FEATURES:
 - Role-based authentication (Admin & User) with Supabase Auth
@@ -36,7 +36,7 @@ LIVE URL:
 https://code-wave-786.vercel.app
 
 GITHUB:
-https://github.com/Muhammad-javed440/code-wave-ai
+https://github.com/Muhammad-javed440/HireSkillr-AI
 
 DOCKER IMAGE:
 meherjaved440/code-wave-ai:latest (Private)
@@ -48,5 +48,5 @@ CATEGORY:
 AI Technology / Web Development / SaaS Platform
 
 AUTHOR:
-Code Wave AI Team
+HireSkillr AI Team
 ========================================================

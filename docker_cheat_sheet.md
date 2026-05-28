@@ -1,4 +1,4 @@
-# Docker Cheat Sheet — Code Wave AI
+# Docker Cheat Sheet — HireSkillr AI
 
 ## Image Details
 

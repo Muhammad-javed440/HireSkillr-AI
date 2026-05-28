@@ -1,0 +1,47 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="hGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e0e7ff" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#6366f1" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded Square Background -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bgGrad)" filter="url(#shadow)" />
+
+  <!-- Inner subtle border -->
+  <rect x="32" y="32" width="448" height="448" rx="80" fill="none" stroke="white" stroke-opacity="0.15" stroke-width="2" />
+
+  <!-- "H" Letter Mark -->
+  <path
+    d="M144 128 L144 384 M144 256 L272 256 M272 128 L272 384"
+    stroke="url(#hGrad)"
+    stroke-width="44"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Checkmark / Verified Tick -->
+  <path
+    d="M304 280 L344 320 L400 224"
+    stroke="#fbbf24"
+    stroke-width="32"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Accent dot -->
+  <circle cx="400" cy="368" r="20" fill="#fbbf24" opacity="0.7" />
+
+  <!-- Small sparkle dots -->
+  <circle cx="380" cy="140" r="8" fill="white" opacity="0.4" />
+  <circle cx="420" cy="170" r="5" fill="white" opacity="0.25" />
+</svg>

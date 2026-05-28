@@ -112,8 +112,8 @@ const Home: React.FC = () => {
   return (
     <div className="relative overflow-hidden">
       {/* Dynamic Background Light Orbs */}
-      <div className="blur-orb w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-orange-500 top-[-50px] left-[-50px] sm:top-[-100px] sm:left-[-100px] animate-float"></div>
-      <div className="blur-orb w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] bg-red-600 top-[20%] right-[-30px] sm:right-[-50px] animate-float-delayed"></div>
+      <div className="blur-orb w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-violet-500 top-[-50px] left-[-50px] sm:top-[-100px] sm:left-[-100px] animate-float"></div>
+      <div className="blur-orb w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] bg-purple-600 top-[20%] right-[-30px] sm:right-[-50px] animate-float-delayed"></div>
       <div className="blur-orb w-[250px] h-[250px] sm:w-[500px] sm:h-[500px] bg-blue-600 bottom-[-100px] sm:bottom-[-200px] left-[10%] animate-float-slow"></div>
 
       {/* Hero Section */}
@@ -121,24 +121,24 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="text-left space-y-5 sm:space-y-8 animate-in slide-in-from-left duration-700">
-              <div className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-orange-600/10 border border-orange-500/20 rounded-full text-orange-600 dark:text-orange-400 text-xs sm:text-sm font-bold animate-pulse">
+              <div className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-violet-600/10 border border-violet-500/20 rounded-full text-violet-600 dark:text-violet-400 text-xs sm:text-sm font-bold animate-pulse">
                 <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4 mr-1.5 sm:mr-2" />
                 New: Smart AI Tools
               </div>
 
               <h1 className="text-3xl 2xs:text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-black dark:text-white leading-tight tracking-tighter">
                 WE MAKE <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-red-500 to-orange-600">SMART</span> <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-violet-500 to-purple-600">SMART</span> <br />
                 AI TECH
               </h1>
 
               <p className="max-w-xl text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-400 leading-relaxed">
-                Code Wave AI builds tools that talk, learn, and grow.
+                HireSkillr AI builds tools that talk, learn, and grow.
                 Our robots help you do your work faster and better every day.
               </p>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-                <Link to="/projects" className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-red-600 hover:bg-red-700 text-white font-black rounded-2xl flex items-center justify-center transition-all shadow-xl shadow-red-600/30 text-sm sm:text-base active:scale-95">
+                <Link to="/projects" className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 bg-purple-600 hover:bg-purple-700 text-white font-black rounded-2xl flex items-center justify-center transition-all shadow-xl shadow-purple-600/30 text-sm sm:text-base active:scale-95">
                   SEE OUR WORK <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </Link>
                 {user && (
@@ -151,7 +151,7 @@ const Home: React.FC = () => {
 
             {/* Hero Image */}
             <div className="relative animate-in slide-in-from-right duration-1000 z-10 mt-4 lg:mt-0">
-              <div className="absolute -inset-6 sm:-inset-10 bg-orange-600/10 dark:bg-orange-600/20 blur-[60px] sm:blur-[100px] rounded-full"></div>
+              <div className="absolute -inset-6 sm:-inset-10 bg-violet-600/10 dark:bg-violet-600/20 blur-[60px] sm:blur-[100px] rounded-full"></div>
               <div className="relative rounded-2xl sm:rounded-[3rem] overflow-hidden border-4 sm:border-8 border-white dark:border-black shadow-2xl rotate-1 sm:rotate-2 hover:rotate-0 transition-transform duration-500">
                 <img
                   src="/hero.jpg"
@@ -182,16 +182,16 @@ const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 sm:mb-16 gap-4">
             <div>
               <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-black dark:text-white mb-3 sm:mb-4 uppercase tracking-tighter">OUR PROJECTS</h2>
-              <div className="w-14 sm:w-20 h-1.5 sm:h-2 bg-orange-600 rounded-full"></div>
+              <div className="w-14 sm:w-20 h-1.5 sm:h-2 bg-violet-600 rounded-full"></div>
             </div>
-            <Link to="/projects" className="flex items-center text-orange-600 hover:text-red-600 font-bold text-sm sm:text-base transition-colors">
+            <Link to="/projects" className="flex items-center text-violet-600 hover:text-purple-700 font-bold text-sm sm:text-base transition-colors">
               VIEW ALL <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </div>
 
           {projectsLoading ? (
             <div className="flex flex-col items-center justify-center py-20">
-              <Loader2 className="w-10 h-10 text-orange-600 animate-spin mb-3" />
+              <Loader2 className="w-10 h-10 text-violet-600 animate-spin mb-3" />
               <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">Loading Projects...</p>
             </div>
           ) : projects.length === 0 ? (
@@ -201,7 +201,7 @@ const Home: React.FC = () => {
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
               {projects.map((project) => (
-                <Link key={project.id} to={`/projects/${project.id}`} className="group bg-white dark:bg-black border border-gray-200 dark:border-gray-900 rounded-2xl sm:rounded-[2rem] overflow-hidden hover:border-orange-500 transition-all duration-500 flex flex-col">
+                <Link key={project.id} to={`/projects/${project.id}`} className="group bg-white dark:bg-black border border-gray-200 dark:border-gray-900 rounded-2xl sm:rounded-[2rem] overflow-hidden hover:border-violet-500 transition-all duration-500 flex flex-col">
                   <div className="p-2 sm:p-3">
                     <DualImageFrame
                       image1={project.media?.[0] || 'https://via.placeholder.com/800x450'}
@@ -212,7 +212,7 @@ const Home: React.FC = () => {
                   <div className="p-4 sm:p-6 flex-grow space-y-3">
                     <div className="flex items-start justify-between gap-2">
                       <h3 className="text-lg sm:text-xl font-black text-black dark:text-white uppercase tracking-tighter line-clamp-2">{project.title}</h3>
-                      <div className="flex items-center text-orange-600 font-bold bg-orange-600/10 px-2 py-1 rounded-lg text-sm shrink-0">
+                      <div className="flex items-center text-violet-600 font-bold bg-violet-600/10 px-2 py-1 rounded-lg text-sm shrink-0">
                         <Star className="w-4 h-4 mr-1 fill-current" /> {project.rating || 0}
                       </div>
                     </div>
@@ -224,7 +224,7 @@ const Home: React.FC = () => {
                           <span className="text-sm font-bold">{project.likes_count || 0}</span>
                         </span>
                       </div>
-                      <span className="p-2 bg-gray-100 dark:bg-gray-900 text-orange-600 rounded-xl group-hover:bg-orange-600 group-hover:text-white transition-all">
+                      <span className="p-2 bg-gray-100 dark:bg-gray-900 text-violet-600 rounded-xl group-hover:bg-violet-600 group-hover:text-white transition-all">
                         <ExternalLink className="w-4 h-4" />
                       </span>
                     </div>
@@ -241,12 +241,12 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-black dark:text-white mb-3 sm:mb-4 uppercase tracking-tighter">WHAT WE DO</h2>
-            <div className="w-14 sm:w-20 h-1.5 sm:h-2 bg-red-600 mx-auto rounded-full"></div>
+            <div className="w-14 sm:w-20 h-1.5 sm:h-2 bg-purple-600 mx-auto rounded-full"></div>
           </div>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
             {/* Feature 1 */}
-            <div className="group bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200 dark:border-gray-800 rounded-2xl sm:rounded-[2.5rem] overflow-hidden hover:border-orange-500 transition-all duration-300 shadow-xl shadow-black/5">
+            <div className="group bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200 dark:border-gray-800 rounded-2xl sm:rounded-[2.5rem] overflow-hidden hover:border-violet-500 transition-all duration-300 shadow-xl shadow-black/5">
               <div className="h-36 sm:h-48 overflow-hidden">
                 <img
                   src="/talk-ai.avif"
@@ -255,7 +255,7 @@ const Home: React.FC = () => {
                 />
               </div>
               <div className="p-5 sm:p-8">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-600/10 rounded-xl flex items-center justify-center text-orange-600 mb-4 sm:mb-6 font-bold text-sm sm:text-base">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-violet-600/10 rounded-xl flex items-center justify-center text-violet-600 mb-4 sm:mb-6 font-bold text-sm sm:text-base">
                   01
                 </div>
                 <h3 className="text-xl sm:text-2xl font-black text-black dark:text-white mb-3 sm:mb-4">Talking AI</h3>
@@ -282,7 +282,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Feature 3 */}
-            <div className="group bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200 dark:border-gray-800 rounded-2xl sm:rounded-[2.5rem] overflow-hidden hover:border-red-500 transition-all duration-300 shadow-xl shadow-black/5 sm:col-span-2 md:col-span-1">
+            <div className="group bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border border-gray-200 dark:border-gray-800 rounded-2xl sm:rounded-[2.5rem] overflow-hidden hover:border-purple-500 transition-all duration-300 shadow-xl shadow-black/5 sm:col-span-2 md:col-span-1">
               <div className="h-36 sm:h-48 overflow-hidden">
                 <img
                   src="/web-app.webp"

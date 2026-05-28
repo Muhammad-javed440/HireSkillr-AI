@@ -1,7 +1,7 @@
-# CLAUDE.md - Code Wave AI Platform
+# CLAUDE.md - HireSkillr AI Platform
 
 ## Project Overview
-Code Wave AI is a premium technology brand platform built with React + TypeScript + Vite + Supabase. It showcases AI-driven projects, voice automation solutions, and web innovation with role-based authentication.
+HireSkillr AI is a premium technology brand platform built with React + TypeScript + Vite + Supabase. It showcases AI-driven projects, voice automation solutions, and web innovation with role-based authentication.
 
 ## Tech Stack
 - **Frontend:** React 19 + TypeScript
@@ -14,7 +14,7 @@ Code Wave AI is a premium technology brand platform built with React + TypeScrip
 
 ## Project Structure
 ```
-code-wave-ai/
+hireskillr-ai/
 ├── components/           # Reusable UI components
 │   ├── DualImageFrame.tsx   # Interactive hover-reveal image cards
 │   ├── Footer.tsx           # Site footer with social links

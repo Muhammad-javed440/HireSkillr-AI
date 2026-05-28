@@ -408,7 +408,7 @@ const AdminProjects: React.FC = () => {
             if (isAdding) resetForm();
             setIsAdding(!isAdding);
           }}
-          className={`px-5 sm:px-6 py-2.5 sm:py-3 ${isAdding ? 'bg-red-600' : 'bg-orange-600'} hover:opacity-90 text-white text-sm font-black rounded-xl flex items-center justify-center transition-all shadow-xl shadow-orange-600/20 min-h-[44px] w-full sm:w-auto`}
+          className={`px-5 sm:px-6 py-2.5 sm:py-3 ${isAdding ? 'bg-red-600' : 'bg-violet-600'} hover:opacity-90 text-white text-sm font-black rounded-xl flex items-center justify-center transition-all shadow-xl shadow-violet-600/20 min-h-[44px] w-full sm:w-auto`}
         >
           {isAdding ? <X className="w-4 h-4 mr-2" /> : <Plus className="w-4 h-4 mr-2" />}
           {isAdding ? 'CANCEL' : 'ADD NEW WORK'}
@@ -432,8 +432,8 @@ const AdminProjects: React.FC = () => {
       )}
 
       {isAdding && (
-        <div className="bg-white dark:bg-black border-2 border-orange-500/20 dark:border-orange-500/10 p-4 sm:p-6 md:p-10 rounded-2xl sm:rounded-[3rem] shadow-2xl animate-in slide-in-from-top-4 duration-500 relative overflow-hidden">
-          <div className="absolute top-0 right-0 p-24 bg-orange-600/5 blur-[100px] rounded-full -z-10"></div>
+        <div className="bg-white dark:bg-black border-2 border-violet-500/20 dark:border-violet-500/10 p-4 sm:p-6 md:p-10 rounded-2xl sm:rounded-[3rem] shadow-2xl animate-in slide-in-from-top-4 duration-500 relative overflow-hidden">
+          <div className="absolute top-0 right-0 p-24 bg-violet-600/5 blur-[100px] rounded-full -z-10"></div>
 
           {isEditing && (
             <div className="mb-4 sm:mb-6 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-xl inline-flex items-center text-blue-600 text-sm font-bold">
@@ -446,31 +446,31 @@ const AdminProjects: React.FC = () => {
               {/* Left Column: Text Info */}
               <div className="space-y-8">
                 <div className="space-y-2">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Project Brand Name *</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Project Brand Name *</label>
                   <input
                     value={projectTitle}
                     onChange={(e) => setProjectTitle(e.target.value)}
-                    className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-orange-500 outline-none transition-all font-bold"
+                    className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-violet-500 outline-none transition-all font-bold"
                     placeholder="Enter project name..."
                   />
                 </div>
 
                 <div className="grid grid-cols-1 2xs:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Date & Time (Auto-captured)</label>
+                    <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Date & Time (Auto-captured)</label>
                     <div className="relative">
-                      <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-orange-600" />
+                      <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-violet-600" />
                       <input
                         type="datetime-local"
                         value={projectDate}
                         onChange={(e) => setProjectDate(e.target.value)}
-                        className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl py-4 pl-12 pr-4 text-black dark:text-white focus:border-orange-500 outline-none transition-all font-bold"
+                        className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl py-4 pl-12 pr-4 text-black dark:text-white focus:border-violet-500 outline-none transition-all font-bold"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Project Price (USD)</label>
+                    <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Project Price (USD)</label>
                     <div className="relative">
                       <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-green-600" />
                       <input
@@ -487,7 +487,7 @@ const AdminProjects: React.FC = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Project URL</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Project URL</label>
                   <div className="relative">
                     <Link className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-blue-600" />
                     <input
@@ -501,12 +501,12 @@ const AdminProjects: React.FC = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Work Description *</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Work Description *</label>
                   <textarea
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                     rows={4}
-                    className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-orange-500 outline-none transition-all font-medium"
+                    className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-violet-500 outline-none transition-all font-medium"
                     placeholder="Describe your innovation..."
                   />
                 </div>
@@ -674,7 +674,7 @@ const AdminProjects: React.FC = () => {
               {/* Right Column: Image Grid (4-6 Images) */}
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Gallery (4-6 Images) *</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Gallery (4-6 Images) *</label>
                   <span className="text-[10px] font-bold text-gray-500 bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded-md uppercase">
                     Selected: {imagePreviews.filter(p => p).length}/6
                   </span>
@@ -683,7 +683,7 @@ const AdminProjects: React.FC = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {imagePreviews.map((preview, idx) => (
                     <div key={idx} className="space-y-2">
-                      <div className={`aspect-square rounded-2xl border-2 border-dashed transition-all group relative overflow-hidden flex flex-col items-center justify-center ${preview ? 'border-green-500/50 bg-green-500/5' : 'border-gray-200 dark:border-gray-800 hover:border-orange-500/50'}`}>
+                      <div className={`aspect-square rounded-2xl border-2 border-dashed transition-all group relative overflow-hidden flex flex-col items-center justify-center ${preview ? 'border-green-500/50 bg-green-500/5' : 'border-gray-200 dark:border-gray-800 hover:border-violet-500/50'}`}>
                         {preview ? (
                           <>
                             <img src={preview} className="w-full h-full object-cover" alt={`Preview ${idx + 1}`} />
@@ -700,11 +700,11 @@ const AdminProjects: React.FC = () => {
                           </>
                         ) : (
                           <>
-                            <div className="p-3 bg-gray-100 dark:bg-gray-900 rounded-xl text-gray-400 group-hover:text-orange-500 transition-colors">
+                            <div className="p-3 bg-gray-100 dark:bg-gray-900 rounded-xl text-gray-400 group-hover:text-violet-500 transition-colors">
                               <ImageIcon className="w-5 h-5" />
                             </div>
                             <span className="text-[10px] font-bold text-gray-400 mt-2 uppercase">Slot {idx + 1}</span>
-                            {idx < 4 && <span className="absolute top-2 left-2 text-[8px] font-black text-orange-600 bg-orange-600/10 px-1 rounded">REQ</span>}
+                            {idx < 4 && <span className="absolute top-2 left-2 text-[8px] font-black text-violet-600 bg-violet-600/10 px-1 rounded">REQ</span>}
                             <input
                               type="file"
                               accept="image/*"
@@ -718,9 +718,9 @@ const AdminProjects: React.FC = () => {
                     </div>
                   ))}
                 </div>
-                <div className="p-4 bg-orange-500/5 border border-orange-500/10 rounded-2xl text-center">
+                <div className="p-4 bg-violet-500/5 border border-violet-500/10 rounded-2xl text-center">
                   <p className="text-[10px] text-gray-500 uppercase font-black tracking-tight leading-relaxed">
-                    Note: Upload 4 or more images (max {MAX_IMAGE_SIZE_MB}MB each) to unlock the <span className="text-orange-600">Dual-Image Frame</span> hover effect.
+                    Note: Upload 4 or more images (max {MAX_IMAGE_SIZE_MB}MB each) to unlock the <span className="text-violet-600">Dual-Image Frame</span> hover effect.
                   </p>
                 </div>
               </div>
@@ -731,7 +731,7 @@ const AdminProjects: React.FC = () => {
                 type="button"
                 onClick={handleSaveProject}
                 disabled={saving}
-                className="px-12 py-5 bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-500 hover:to-orange-500 text-white font-black rounded-[2rem] flex items-center shadow-2xl shadow-red-600/20 transform hover:-translate-y-1 transition-all active:scale-95 uppercase tracking-[0.2em] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                className="px-12 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-black rounded-[2rem] flex items-center shadow-2xl shadow-purple-600/30 transform hover:-translate-y-1 transition-all active:scale-95 uppercase tracking-[0.2em] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
                 {saving ? (
                   <>
@@ -754,7 +754,7 @@ const AdminProjects: React.FC = () => {
       <div className="bg-white dark:bg-black border-2 border-gray-100 dark:border-gray-950 rounded-2xl sm:rounded-[3rem] overflow-hidden shadow-xl">
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20">
-            <Loader2 className="w-8 h-8 text-orange-600 animate-spin mb-4" />
+            <Loader2 className="w-8 h-8 text-violet-600 animate-spin mb-4" />
             <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">Loading Projects...</p>
           </div>
         ) : projects.length === 0 ? (
@@ -778,7 +778,7 @@ const AdminProjects: React.FC = () => {
                   <tr key={p.id} className="hover:bg-gray-50 dark:hover:bg-gray-900/30 transition-colors group">
                     <td className="px-4 sm:px-8 py-4 sm:py-6">
                       <div className="flex items-center">
-                        <div className="w-12 h-12 bg-orange-600/10 text-orange-600 rounded-2xl flex items-center justify-center mr-4 shadow-inner group-hover:bg-orange-600 group-hover:text-white transition-all overflow-hidden">
+                        <div className="w-12 h-12 bg-violet-600/10 text-violet-600 rounded-2xl flex items-center justify-center mr-4 shadow-inner group-hover:bg-violet-600 group-hover:text-white transition-all overflow-hidden">
                           {p.media?.[0] ? (
                             <img src={p.media[0]} alt={p.title} className="w-full h-full object-cover" />
                           ) : (
@@ -787,7 +787,7 @@ const AdminProjects: React.FC = () => {
                         </div>
                         <div>
                           <span className="font-black text-black dark:text-white block uppercase tracking-tighter">{p.title}</span>
-                          <span className="text-[10px] text-orange-600 font-bold uppercase tracking-tighter">
+                          <span className="text-[10px] text-violet-600 font-bold uppercase tracking-tighter">
                             {p.likes_count || 0} likes • {p.rating || 0} rating
                           </span>
                         </div>
@@ -826,7 +826,7 @@ const AdminProjects: React.FC = () => {
                       <div className="flex items-center justify-end space-x-1 sm:space-x-2">
                         <button
                           onClick={() => handleEditProject(p)}
-                          className="p-3 text-gray-500 hover:text-orange-500 hover:bg-orange-500/10 rounded-xl transition-all"
+                          className="p-3 text-gray-500 hover:text-violet-500 hover:bg-violet-500/10 rounded-xl transition-all"
                         >
                           <Edit3 className="w-5 h-5" />
                         </button>

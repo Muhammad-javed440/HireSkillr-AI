@@ -1,9 +1,9 @@
 ---
 name: supabase-rls
-description: Generate and manage Supabase Row Level Security policies, database schemas, storage bucket policies, triggers, and functions for the Code Wave AI platform. Use when (1) Adding or modifying RLS policies on any table, (2) Creating new database tables that need security policies, (3) Setting up Supabase storage bucket policies for avatars or project media, (4) Writing admin-gated or user-gated SQL policies, (5) Reviewing or auditing existing RLS rules, (6) Adding contact_messages or any new table with proper security, (7) Any request mentioning "RLS", "row level security", "supabase policies", "storage policies", or "database security".
+description: Generate and manage Supabase Row Level Security policies, database schemas, storage bucket policies, triggers, and functions for the HireSkillr AI platform. Use when (1) Adding or modifying RLS policies on any table, (2) Creating new database tables that need security policies, (3) Setting up Supabase storage bucket policies for avatars or project media, (4) Writing admin-gated or user-gated SQL policies, (5) Reviewing or auditing existing RLS rules, (6) Adding contact_messages or any new table with proper security, (7) Any request mentioning "RLS", "row level security", "supabase policies", "storage policies", or "database security".
 ---
 
-# Supabase RLS - Code Wave AI
+# Supabase RLS - HireSkillr AI
 
 ## Core Rules
 

@@ -1,4 +1,4 @@
-# Code Wave AI - Database Schema & RLS Reference
+# HireSkillr AI - Database Schema & RLS Reference
 
 ## Enums
 

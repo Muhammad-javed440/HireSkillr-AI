@@ -109,7 +109,7 @@ const AdminSettings: React.FC = () => {
   };
   const [formData, setFormData] = useState({
     fullName: user?.full_name || '',
-    bio: user?.bio || 'Founder & Lead Developer at CodeWaveAI. I build intelligent AI-powered tools, voice automation systems, and modern web applications that help businesses scale and people work smarter. Passionate about turning complex problems into simple, elegant solutions.',
+    bio: user?.bio || 'Founder & Lead Developer at HireSkillr AI. I build intelligent AI-powered tools, voice automation systems, and modern web applications that help businesses scale and people work smarter. Passionate about turning complex problems into simple, elegant solutions.',
     facebook: user?.social_links?.facebook || '',
     linkedin: user?.social_links?.linkedin || '',
     github: user?.social_links?.github || ''

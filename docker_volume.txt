@@ -247,10 +247,10 @@ Restore from backup:
     node:20-alpine npm run dev
 
 
-9. CODE WAVE AI PROJECT — VOLUME USAGE
+9. HIRESKILLR AI PROJECT — VOLUME USAGE
 ========================================================
 
-The Code Wave AI Docker container does NOT require volumes because:
+The HireSkillr AI Docker container does NOT require volumes because:
 
   - Database:     Hosted on Supabase (cloud PostgreSQL)
   - File Uploads: Stored in Supabase Storage (cloud)

@@ -284,7 +284,7 @@ const AdminTeam: React.FC = () => {
               setIsAdding(true);
             }
           }}
-          className={`px-5 sm:px-6 py-2.5 sm:py-3 ${isAdding ? 'bg-red-600' : 'bg-orange-600'} hover:opacity-90 text-white text-sm font-black rounded-xl flex items-center justify-center transition-all shadow-xl shadow-orange-600/20 min-h-[44px] w-full sm:w-auto`}
+          className={`px-5 sm:px-6 py-2.5 sm:py-3 ${isAdding ? 'bg-red-600' : 'bg-violet-600'} hover:opacity-90 text-white text-sm font-black rounded-xl flex items-center justify-center transition-all shadow-xl shadow-violet-600/20 min-h-[44px] w-full sm:w-auto`}
         >
           {isAdding ? <X className="w-4 h-4 mr-2" /> : <Plus className="w-4 h-4 mr-2" />}
           {isAdding ? 'CANCEL' : 'ADD MEMBER'}
@@ -309,8 +309,8 @@ const AdminTeam: React.FC = () => {
 
       {/* Add/Edit Form */}
       {isAdding && (
-        <div className="bg-white dark:bg-black border-2 border-orange-500/20 dark:border-orange-500/10 p-4 sm:p-6 md:p-10 rounded-2xl sm:rounded-[3rem] shadow-2xl animate-in slide-in-from-top-4 duration-500 relative overflow-hidden">
-          <div className="absolute top-0 right-0 p-24 bg-orange-600/5 blur-[100px] rounded-full -z-10"></div>
+        <div className="bg-white dark:bg-black border-2 border-violet-500/20 dark:border-violet-500/10 p-4 sm:p-6 md:p-10 rounded-2xl sm:rounded-[3rem] shadow-2xl animate-in slide-in-from-top-4 duration-500 relative overflow-hidden">
+          <div className="absolute top-0 right-0 p-24 bg-violet-600/5 blur-[100px] rounded-full -z-10"></div>
 
           {isEditing && (
             <div className="mb-4 sm:mb-6 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-xl inline-flex items-center text-blue-600 text-sm font-bold">
@@ -322,8 +322,8 @@ const AdminTeam: React.FC = () => {
             <div className="grid sm:grid-cols-3 gap-6 sm:gap-8">
               {/* Profile Picture Upload */}
               <div className="space-y-4">
-                <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Profile Picture *</label>
-                <div className="aspect-square rounded-3xl border-2 border-dashed border-gray-200 dark:border-gray-800 hover:border-orange-500/50 transition-all relative overflow-hidden flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-950 group">
+                <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Profile Picture *</label>
+                <div className="aspect-square rounded-3xl border-2 border-dashed border-gray-200 dark:border-gray-800 hover:border-violet-500/50 transition-all relative overflow-hidden flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-950 group">
                   {imagePreview ? (
                     <>
                       <img src={imagePreview} className="w-full h-full object-cover" alt="Preview" style={{ objectPosition: `${posX}% ${posY}%` }} />
@@ -370,7 +370,7 @@ const AdminTeam: React.FC = () => {
                         onChange={handleImageChange}
                         className="absolute inset-0 opacity-0 cursor-pointer"
                       />
-                      <Upload className="w-10 h-10 text-gray-400 mb-2 group-hover:text-orange-500 transition-colors" />
+                      <Upload className="w-10 h-10 text-gray-400 mb-2 group-hover:text-violet-500 transition-colors" />
                       <p className="text-xs font-black text-gray-400 uppercase tracking-tight">Click to upload</p>
                       <p className="text-[10px] text-gray-400 mt-1 uppercase">JPG, PNG (1:1 ratio)</p>
                     </>
@@ -384,22 +384,22 @@ const AdminTeam: React.FC = () => {
               {/* Basic Info */}
               <div className="sm:col-span-2 space-y-6">
                 <div className="space-y-2">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Full Name *</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Full Name *</label>
                   <input
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-orange-500 outline-none transition-all font-bold"
+                    className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-violet-500 outline-none transition-all font-bold"
                     placeholder="John Doe"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Bio *</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Bio *</label>
                   <textarea
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                     rows={4}
-                    className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-orange-500 outline-none transition-all font-medium"
+                    className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-violet-500 outline-none transition-all font-medium"
                     placeholder="Brief description about this team member..."
                   />
                 </div>
@@ -411,7 +411,7 @@ const AdminTeam: React.FC = () => {
                 type="button"
                 onClick={handleSaveMember}
                 disabled={saving}
-                className="px-12 py-5 bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-500 hover:to-orange-500 text-white font-black rounded-[2rem] flex items-center shadow-2xl shadow-red-600/20 transform hover:-translate-y-1 transition-all active:scale-95 uppercase tracking-[0.2em] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                className="px-12 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-black rounded-[2rem] flex items-center shadow-2xl shadow-purple-600/30 transform hover:-translate-y-1 transition-all active:scale-95 uppercase tracking-[0.2em] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
                 {saving ? (
                   <>
@@ -434,7 +434,7 @@ const AdminTeam: React.FC = () => {
       <div className="bg-white dark:bg-black border-2 border-gray-100 dark:border-gray-950 rounded-2xl sm:rounded-[3rem] overflow-hidden shadow-xl p-4 sm:p-6 md:p-8">
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20">
-            <Loader2 className="w-8 h-8 text-orange-600 animate-spin mb-4" />
+            <Loader2 className="w-8 h-8 text-violet-600 animate-spin mb-4" />
             <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">Loading Team...</p>
           </div>
         ) : members.length === 0 ? (
@@ -454,8 +454,8 @@ const AdminTeam: React.FC = () => {
                     {member.image_url ? (
                       <img src={member.image_url} alt={member.name} className="w-full h-full object-cover" style={{ objectPosition: `${member.image_position?.x ?? 50}% ${member.image_position?.y ?? 50}%` }} />
                     ) : (
-                      <div className="w-full h-full bg-orange-500/10 flex items-center justify-center">
-                        <User className="w-10 h-10 text-orange-600" />
+                      <div className="w-full h-full bg-violet-500/10 flex items-center justify-center">
+                        <User className="w-10 h-10 text-violet-600" />
                       </div>
                     )}
                   </div>
@@ -467,7 +467,7 @@ const AdminTeam: React.FC = () => {
                   <div className="flex items-center gap-2 pt-4 border-t border-gray-200 dark:border-gray-800 w-full justify-center">
                     <button
                       onClick={() => handleEditMember(member)}
-                      className="px-4 py-2 text-sm font-bold text-gray-500 hover:text-orange-500 hover:bg-orange-500/10 rounded-xl transition-all flex items-center gap-2"
+                      className="px-4 py-2 text-sm font-bold text-gray-500 hover:text-violet-500 hover:bg-violet-500/10 rounded-xl transition-all flex items-center gap-2"
                     >
                       <Edit3 className="w-4 h-4" /> Edit
                     </button>

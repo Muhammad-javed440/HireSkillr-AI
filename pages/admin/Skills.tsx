@@ -181,7 +181,7 @@ const AdminSkills: React.FC = () => {
             if (isAdding) resetForm();
             setIsAdding(!isAdding);
           }}
-          className={`px-5 sm:px-6 py-2.5 sm:py-3 ${isAdding ? 'bg-red-600' : 'bg-orange-600'} hover:opacity-90 text-white text-sm font-black rounded-xl flex items-center justify-center transition-all shadow-xl shadow-orange-600/20 min-h-[44px] w-full sm:w-auto`}
+          className={`px-5 sm:px-6 py-2.5 sm:py-3 ${isAdding ? 'bg-red-600' : 'bg-violet-600'} hover:opacity-90 text-white text-sm font-black rounded-xl flex items-center justify-center transition-all shadow-xl shadow-violet-600/20 min-h-[44px] w-full sm:w-auto`}
         >
           {isAdding ? <X className="w-4 h-4 mr-2" /> : <Plus className="w-4 h-4 mr-2" />}
           {isAdding ? 'CANCEL' : 'ADD NEW SKILL'}
@@ -206,8 +206,8 @@ const AdminSkills: React.FC = () => {
 
       {/* Add/Edit Form */}
       {isAdding && (
-        <div className="bg-white dark:bg-black border-2 border-orange-500/20 dark:border-orange-500/10 p-4 sm:p-6 md:p-10 rounded-2xl sm:rounded-[3rem] shadow-2xl animate-in slide-in-from-top-4 duration-500 relative overflow-hidden">
-          <div className="absolute top-0 right-0 p-24 bg-orange-600/5 blur-[100px] rounded-full -z-10"></div>
+        <div className="bg-white dark:bg-black border-2 border-violet-500/20 dark:border-violet-500/10 p-4 sm:p-6 md:p-10 rounded-2xl sm:rounded-[3rem] shadow-2xl animate-in slide-in-from-top-4 duration-500 relative overflow-hidden">
+          <div className="absolute top-0 right-0 p-24 bg-violet-600/5 blur-[100px] rounded-full -z-10"></div>
 
           {isEditing && (
             <div className="mb-4 sm:mb-6 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-xl inline-flex items-center text-blue-600 text-sm font-bold">
@@ -219,22 +219,22 @@ const AdminSkills: React.FC = () => {
             <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
               {/* Skill Name */}
               <div className="space-y-2">
-                <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Skill Name *</label>
+                <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Skill Name *</label>
                 <input
                   value={skillName}
                   onChange={(e) => setSkillName(e.target.value)}
-                  className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-orange-500 outline-none transition-all font-bold"
+                  className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-violet-500 outline-none transition-all font-bold"
                   placeholder="e.g. React, Python, Figma..."
                 />
               </div>
 
               {/* Category */}
               <div className="space-y-2">
-                <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Category *</label>
+                <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Category *</label>
                 <select
                   value={category}
                   onChange={(e) => setCategory(e.target.value)}
-                  className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-orange-500 outline-none transition-all font-bold"
+                  className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-violet-500 outline-none transition-all font-bold"
                 >
                   {CATEGORIES.map(cat => (
                     <option key={cat} value={cat}>{cat}</option>
@@ -244,7 +244,7 @@ const AdminSkills: React.FC = () => {
 
               {/* Proficiency */}
               <div className="space-y-2">
-                <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">
+                <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">
                   Proficiency Level: <span className="text-black dark:text-white">{proficiency}%</span>
                 </label>
                 <div className="space-y-3">
@@ -254,7 +254,7 @@ const AdminSkills: React.FC = () => {
                     max="100"
                     value={proficiency}
                     onChange={(e) => setProficiency(Number(e.target.value))}
-                    className="w-full h-3 bg-gray-200 dark:bg-gray-800 rounded-full appearance-none cursor-pointer accent-orange-600"
+                    className="w-full h-3 bg-gray-200 dark:bg-gray-800 rounded-full appearance-none cursor-pointer accent-violet-600"
                   />
                   <div className="flex justify-between text-[10px] font-bold text-gray-400 uppercase">
                     <span>Beginner</span>
@@ -267,17 +267,17 @@ const AdminSkills: React.FC = () => {
 
               {/* Icon (Emoji) */}
               <div className="space-y-2">
-                <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Icon (Emoji - Optional)</label>
+                <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Icon (Emoji - Optional)</label>
                 <div className="flex gap-4">
                   <input
                     value={icon}
                     onChange={(e) => setIcon(e.target.value)}
-                    className="flex-1 bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-orange-500 outline-none transition-all font-bold text-2xl"
+                    className="flex-1 bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-violet-500 outline-none transition-all font-bold text-2xl"
                     placeholder="e.g. ⚛️ 🐍 🎨"
                     maxLength={4}
                   />
                   {icon && (
-                    <div className="w-16 h-16 rounded-2xl bg-orange-500/10 flex items-center justify-center text-3xl">
+                    <div className="w-16 h-16 rounded-2xl bg-violet-500/10 flex items-center justify-center text-3xl">
                       {icon}
                     </div>
                   )}
@@ -287,12 +287,12 @@ const AdminSkills: React.FC = () => {
 
             {/* Description */}
             <div className="space-y-2">
-              <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Description (Optional)</label>
+              <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Description (Optional)</label>
               <textarea
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 rows={3}
-                className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-orange-500 outline-none transition-all font-medium"
+                className="w-full bg-gray-50 dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-900 rounded-2xl p-4 text-black dark:text-white focus:border-violet-500 outline-none transition-all font-medium"
                 placeholder="Brief description of your experience with this skill..."
               />
             </div>
@@ -302,7 +302,7 @@ const AdminSkills: React.FC = () => {
                 type="button"
                 onClick={handleSaveSkill}
                 disabled={saving}
-                className="px-12 py-5 bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-500 hover:to-orange-500 text-white font-black rounded-[2rem] flex items-center shadow-2xl shadow-red-600/20 transform hover:-translate-y-1 transition-all active:scale-95 uppercase tracking-[0.2em] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                className="px-12 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-black rounded-[2rem] flex items-center shadow-2xl shadow-purple-600/30 transform hover:-translate-y-1 transition-all active:scale-95 uppercase tracking-[0.2em] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
                 {saving ? (
                   <>
@@ -325,7 +325,7 @@ const AdminSkills: React.FC = () => {
       <div className="bg-white dark:bg-black border-2 border-gray-100 dark:border-gray-950 rounded-2xl sm:rounded-[3rem] overflow-hidden shadow-xl">
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20">
-            <Loader2 className="w-8 h-8 text-orange-600 animate-spin mb-4" />
+            <Loader2 className="w-8 h-8 text-violet-600 animate-spin mb-4" />
             <p className="text-gray-500 font-bold uppercase tracking-widest text-xs">Loading Skills...</p>
           </div>
         ) : skills.length === 0 ? (
@@ -338,8 +338,8 @@ const AdminSkills: React.FC = () => {
             {Object.entries(groupedSkills).map(([cat, catSkills]) => (
               <div key={cat} className="p-4 sm:p-6 md:p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 bg-orange-500/10 rounded-xl">
-                    <Code2 className="w-5 h-5 text-orange-600" />
+                  <div className="p-2 bg-violet-500/10 rounded-xl">
+                    <Code2 className="w-5 h-5 text-violet-600" />
                   </div>
                   <h3 className="font-black text-black dark:text-white uppercase tracking-tighter">{cat}</h3>
                   <span className="text-xs font-bold text-gray-400 bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded-md">
@@ -383,7 +383,7 @@ const AdminSkills: React.FC = () => {
                       <div className="flex items-center gap-2 flex-shrink-0">
                         <button
                           onClick={() => handleEditSkill(skill)}
-                          className="p-2 text-gray-500 hover:text-orange-500 hover:bg-orange-500/10 rounded-xl transition-all"
+                          className="p-2 text-gray-500 hover:text-violet-500 hover:bg-violet-500/10 rounded-xl transition-all"
                         >
                           <Edit3 className="w-4 h-4" />
                         </button>
@@ -406,8 +406,8 @@ const AdminSkills: React.FC = () => {
       {/* Quick Stats */}
       {skills.length > 0 && (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-          <div className="bg-orange-500/10 border border-orange-500/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
-            <div className="text-2xl sm:text-3xl font-black text-orange-600 mb-1">{skills.length}</div>
+          <div className="bg-violet-500/10 border border-violet-500/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
+            <div className="text-2xl sm:text-3xl font-black text-violet-600 mb-1">{skills.length}</div>
             <div className="text-[10px] sm:text-xs font-bold text-gray-500 uppercase">Total Skills</div>
           </div>
           <div className="bg-green-500/10 border border-green-500/20 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">

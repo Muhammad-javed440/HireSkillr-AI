@@ -34,7 +34,7 @@ const DualImageFrame: React.FC<DualImageFrameProps> = ({ image1, image2, alt, cl
           />
           
           {/* Glowing Edge Line */}
-          <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-orange-500 via-white to-red-600 shadow-[0_0_20px_rgba(249,115,22,0.8)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-indigo-500 via-white to-purple-600 shadow-[0_0_20px_rgba(139,92,246,0.8)] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>
       </div>
 
@@ -42,11 +42,11 @@ const DualImageFrame: React.FC<DualImageFrameProps> = ({ image1, image2, alt, cl
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity duration-700"></div>
 
       {/* Glassy Border Reveal */}
-      <div className="absolute inset-0 border-2 border-white/5 group-hover:border-orange-500/30 rounded-[2rem] pointer-events-none transition-colors duration-700"></div>
+      <div className="absolute inset-0 border-2 border-white/5 group-hover:border-violet-500/30 rounded-[2rem] pointer-events-none transition-colors duration-700"></div>
       
       {/* "View More" Indicator that slides in */}
       <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 delay-100 flex items-center space-x-2">
-        <div className="h-[2px] w-6 sm:w-8 bg-orange-500"></div>
+        <div className="h-[2px] w-6 sm:w-8 bg-violet-500"></div>
         <span className="text-[8px] sm:text-[10px] font-black text-white uppercase tracking-[0.3em]">Live Preview</span>
       </div>
     </div>

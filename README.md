@@ -1,9 +1,9 @@
-# 📜 Code Wave AI Technology Platform
+# 📜 HireSkillr AI Technology Platform
 
-**Code Wave AI** is a premium, modern technology brand platform showcasing AI-driven projects, voice automation solutions, and web innovation.
+**HireSkillr AI** is a premium, modern technology brand platform showcasing AI-driven projects, voice automation solutions, and web innovation.
 
 ## 🚀 Vision
-Establishing a high-end digital presence for Code Wave AI through secure user management, media-rich project showcases, and a powerful admin-controlled ecosystem.
+Establishing a high-end digital presence for HireSkillr AI through secure user management, media-rich project showcases, and a powerful admin-controlled ecosystem.
 
 ## 📁 Project Structure
 ```text
@@ -99,4 +99,4 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 - **Aesthetics:** High-contrast tech-focused design with professional animations.
 
 ---
-Developed with ❤️ by **Code Wave AI Team**.
+Developed with ❤️ by **HireSkillr AI Team**.

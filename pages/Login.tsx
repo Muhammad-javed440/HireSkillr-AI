@@ -52,7 +52,7 @@ const Login: React.FC = () => {
   return (
     <div className="min-h-[80vh] flex items-center justify-center px-3 sm:px-4 py-8 sm:py-12">
       <div className="w-full max-w-md space-y-6 sm:space-y-8 bg-white dark:bg-black border border-gray-200 dark:border-gray-900 p-5 sm:p-8 md:p-10 rounded-2xl sm:rounded-[2.5rem] shadow-2xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-12 bg-orange-600/5 blur-3xl rounded-full"></div>
+        <div className="absolute top-0 right-0 p-12 bg-violet-600/5 blur-3xl rounded-full"></div>
 
         {showForgotPassword ? (
           <>
@@ -70,7 +70,7 @@ const Login: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => { setShowForgotPassword(false); setResetSuccess(false); setResetEmail(''); setResetError(''); }}
-                  className="w-full py-4 bg-orange-600 hover:bg-orange-500 text-white font-black rounded-2xl transition-all shadow-xl shadow-orange-600/20 flex items-center justify-center space-x-2 uppercase tracking-widest"
+                  className="w-full py-4 bg-violet-600 hover:bg-violet-500 text-white font-black rounded-2xl transition-all shadow-xl shadow-violet-600/20 flex items-center justify-center space-x-2 uppercase tracking-widest"
                 >
                   <ArrowLeft className="w-5 h-5" />
                   <span>Back to Login</span>
@@ -87,15 +87,15 @@ const Login: React.FC = () => {
 
                 <form onSubmit={handleForgotPassword} className="space-y-6 relative">
                   <div className="space-y-1">
-                    <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Email Address</label>
+                    <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Email Address</label>
                     <div className="relative group">
-                      <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-orange-600 transition-colors" />
+                      <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-violet-600 transition-colors" />
                       <input
                         type="email"
                         required
                         value={resetEmail}
                         onChange={(e) => setResetEmail(e.target.value)}
-                        className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-900 rounded-2xl py-4 pl-12 pr-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-600 transition-all font-bold"
+                        className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-900 rounded-2xl py-4 pl-12 pr-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-violet-600 transition-all font-bold"
                         placeholder="Enter your email"
                       />
                     </div>
@@ -104,7 +104,7 @@ const Login: React.FC = () => {
                   <button
                     type="submit"
                     disabled={resetSending}
-                    className="w-full py-4 bg-orange-600 hover:bg-orange-500 disabled:opacity-50 text-white font-black rounded-2xl transition-all shadow-xl shadow-orange-600/20 flex items-center justify-center space-x-2 uppercase tracking-widest"
+                    className="w-full py-4 bg-violet-600 hover:bg-violet-500 disabled:opacity-50 text-white font-black rounded-2xl transition-all shadow-xl shadow-violet-600/20 flex items-center justify-center space-x-2 uppercase tracking-widest"
                   >
                     {resetSending ? <Loader2 className="w-5 h-5 animate-spin" /> : <span>Send Recovery Email</span>}
                   </button>
@@ -114,7 +114,7 @@ const Login: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => { setShowForgotPassword(false); setResetError(''); setResetEmail(''); }}
-                    className="text-orange-600 font-black hover:underline uppercase text-xs tracking-widest inline-flex items-center gap-1"
+                    className="text-violet-600 font-black hover:underline uppercase text-xs tracking-widest inline-flex items-center gap-1"
                   >
                     <ArrowLeft className="w-3 h-3" />
                     Back to Login
@@ -139,15 +139,15 @@ const Login: React.FC = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6 relative">
               <div className="space-y-1">
-                <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Email Address</label>
+                <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Email Address</label>
                 <div className="relative group">
-                  <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-orange-600 transition-colors" />
+                  <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-violet-600 transition-colors" />
                   <input
                     type="email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-900 rounded-2xl py-4 pl-12 pr-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-600 transition-all font-bold"
+                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-900 rounded-2xl py-4 pl-12 pr-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-violet-600 transition-all font-bold"
                     placeholder="Your email"
                   />
                 </div>
@@ -155,7 +155,7 @@ const Login: React.FC = () => {
 
               <div className="space-y-1">
                 <div className="flex items-center justify-between px-1">
-                  <label className="text-xs font-black text-orange-600 uppercase tracking-widest ml-1">Password</label>
+                  <label className="text-xs font-black text-violet-600 uppercase tracking-widest ml-1">Password</label>
                   <button
                     type="button"
                     onClick={() => { setShowForgotPassword(true); setResetEmail(email); setError(''); }}
@@ -165,13 +165,13 @@ const Login: React.FC = () => {
                   </button>
                 </div>
                 <div className="relative group">
-                  <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-orange-600 transition-colors" />
+                  <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 group-focus-within:text-violet-600 transition-colors" />
                   <input
                     type={showPassword ? 'text' : 'password'}
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-900 rounded-2xl py-4 pl-12 pr-12 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-600 transition-all font-bold"
+                    className="w-full bg-gray-50 dark:bg-gray-950 border border-gray-200 dark:border-gray-900 rounded-2xl py-4 pl-12 pr-12 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-violet-600 transition-all font-bold"
                     placeholder="Your password"
                   />
                   <button
@@ -187,7 +187,7 @@ const Login: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 bg-orange-600 hover:bg-orange-500 disabled:opacity-50 text-white font-black rounded-2xl transition-all shadow-xl shadow-orange-600/20 flex items-center justify-center space-x-2 uppercase tracking-widest"
+                className="w-full py-4 bg-violet-600 hover:bg-violet-500 disabled:opacity-50 text-white font-black rounded-2xl transition-all shadow-xl shadow-violet-600/20 flex items-center justify-center space-x-2 uppercase tracking-widest"
               >
                 {isSubmitting ? <Loader2 className="w-5 h-5 animate-spin" /> : <span>LOG IN</span>}
               </button>
@@ -195,7 +195,7 @@ const Login: React.FC = () => {
 
             <div className="text-center text-sm pt-6">
               <span className="text-gray-500 font-medium">New here?</span>{' '}
-              <Link to="/signup" className="text-orange-600 font-black hover:underline uppercase text-xs tracking-widest">Join Us</Link>
+              <Link to="/signup" className="text-violet-600 font-black hover:underline uppercase text-xs tracking-widest">Join Us</Link>
             </div>
           </>
         )}
