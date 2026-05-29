@@ -13,7 +13,7 @@ app = FastAPI()
 origins = [
     "http://localhost:3000",
     "http://localhost:3001",
-    # "https://code-wave-44.vercel.app",
+    # "https://company.hireskillr.com",
 ]
 
 app.add_middleware(
@@ -63,10 +63,10 @@ HireSkillr AI is a premium AI-driven technology brand based in Pakistan, special
          CONTACT INFO
 ═══════════════════════════════════
 
-- Email: codewaveai44@gmail.com
-- WhatsApp: Available on the website contact page.
+- Email: hello@mail.hireskillr.com
+- WhatsApp: +92 302 4008502
 - Location: Pakistan
-- Website: https://code-wave-44.vercel.app
+- Website: https://company.hireskillr.com
 
 ═══════════════════════════════════
        FREQUENTLY ASKED QUESTIONS
@@ -76,7 +76,7 @@ Q: What services does HireSkillr AI offer?
 A: AI Voice Agents, AI Chatbots, Web Development, and Custom AI Solutions.
 
 Q: How can I get a custom AI voice agent for my business?
-A: Contact us via the website contact form or email codewaveai44@gmail.com with your requirements, and we will get back to you.
+A: Contact us via the website contact form or email hello@mail.hireskillr.com with your requirements, and we will get back to you.
 
 Q: What technologies does HireSkillr AI use?
 A: React, TypeScript, Next.js, Tailwind CSS, Supabase, Python, FastAPI, and various AI/ML frameworks.
@@ -94,7 +94,7 @@ Q: Where is HireSkillr AI located?
 A: We are based in Pakistan and work with clients worldwide.
 
 Q: How do I get started?
-A: Visit our contact page, fill out the form, or email codewaveai44@gmail.com. We'll schedule a consultation.
+A: Visit our contact page, fill out the form, or email hello@mail.hireskillr.com. We'll schedule a consultation.
 
 ═══════════════════════════════════
            RULES
